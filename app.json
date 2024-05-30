@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "auth",
+    "slug": "auth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.auth",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan QR codes.",
+        "NSFaceIDUsageDescription": "This app uses Face ID to secure your payment information."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.auth"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-payments-stripe",
+        {
+          "publishableKey": "Aa4KytgGQyXOo0E0SRmxpTZFJZLqcbTfjQRBCFRboLG5FGMCqEru45vJHp_GEdfEoe0WHLJ4_Jg2DjO1",
+          "merchantId": "merchant.com.yourcompany.auth",
+          "scheme": "authscheme"
+        }
+      ]
+    ],
+    "scheme": "authscheme" 
+  }
+}
